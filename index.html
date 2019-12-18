@@ -165,6 +165,21 @@
         <div class="title_box">
             <h3 style="color: #EAF5FF;">使用說明</h3>
         </div>
+        <!-- Swiper -->
+        <div class="swiper-instructions">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/img/instructions1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/instructions2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/instructions3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/instructions4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/instructions5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/img/instructions6.jpg" alt=""></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
     </div>
 
     <div class="container">
@@ -217,21 +232,25 @@
                     <colgroup style="background-color: #EAF5FF;"></colgroup>
                     <colgroup style="background-color: #fff;"></colgroup>
                     <colgroup style="background-color: #EAF5FF;"></colgroup>
-                    　<tr>
+                    <tr>
                         <th>品牌</th>
                         <td>
+                            <div class="table-head">短程最佳</div>
                             <img src="/img/goshare logo-2.png" alt="">
                             <h4>Gogoro</h4>
                         </td>
                         <td>
+                            <div class="table-head">日租最佳</div>
                             <img src="/img/WeMo logo.png" alt="">
                             <h4>WeMo</h4>
                         </td>
                         <td>
+                            <div class="table-head">範圍最廣</div>
                             <img src="/img/iRent logo.png" alt="">
                             <h4>iRent</h4>
                         </td>
                         <td>
+                            <div class="table-head">經濟實惠</div>
                             <img src="/img/ubike logo.png" alt="">
                             <h4>Ubike</h4>
                         </td>
@@ -316,7 +335,8 @@
                             方式</th>
                         <td>公共停車格</td>
                         <td>公共停車格 <br>
-                            與私人停車場合作
+                            與私人停車場合作 <br>
+                            (免卡片、代幣，透過App就能入場)
                         </td>
                         <td>公共停車格 <br>
                             與私人停車場合作
@@ -325,8 +345,11 @@
                         　
                     </tr>
                 </table>
-
+                <div class="notice">
+                    <p>※以上數據僅供參考，實際數據依各廠最新公告為主</p>
+                </div>
             </div>
+
         </div>
 
     </div>
@@ -336,7 +359,30 @@
             <div class="title_box">
                 <h3>據點</h3>
             </div>
-            <img src="/img/location1.jpg" alt="">
+
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(/img/location1.jpg)">
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(/img/location2.jpg)">
+                    </div>
+                </div>
+
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+
+        <div class="cost container_pd" id="c-7">
+            <div class="title_box">
+                <h3>計費方式</h3>
+            </div>
+            <img src="/img/cost.png" alt="">
         </div>
     </div>
 
@@ -375,6 +421,7 @@
     <!-- JS -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
 
+    <!-- 表格輪播 -->
     <script>
         var swiper = new Swiper('.swiper-container', {
             effect: 'flip',
@@ -389,7 +436,20 @@
         });
     </script>
 
-   
+    <!-- 使用說明輪播 -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-instructions', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
