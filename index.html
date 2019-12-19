@@ -17,7 +17,9 @@
 <body>
     <div class="navbar">
         <div class="navbar_L">
-            <h3>共享機車</h3>
+            <a href="#top">
+                <h3>共享機車</h3>
+            </a>
         </div>
         <div class="navbar_R">
             <div class="navbar_group">
@@ -46,38 +48,40 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="banner container_pd">
-            <img src="/img/banner.jpg" alt="">
+    <!-- banner -->
+    <div class="banner container container_pd" id="top">
+        <img src="/img/banner.jpg" alt="">
+    </div>
+
+    <!-- 簡介 -->
+    <div class="about container container_pd " id="c-1">
+        <div class="title_box">
+            <h3>簡介</h3>
         </div>
-        <div class="about container_pd" id="c-1">
-            <div class="title_box">
-                <h3>簡介</h3>
+        <div class="about_top">
+            <div class="about_top_L">
+                <img src="/img/about.png" alt="">
             </div>
-            <div class="about_top">
-                <div class="about_top_L">
-                    <img src="/img/about.png" alt="">
-                </div>
-                <div class="about_top_R">
-                    <h2>短程移動共享方案</h2>
-                    <p>台灣機車不管是數量或是密集度，都在全球排行上數一數二，機車更是推動台灣經濟的重要推手。但想在都會區移動，嫌計程車太貴，搭公車太繞，騎Ubike
-                        太慢，或許共享機車是你的另一好選擇。目前台灣共享機車有 WEMO、iRent 和 GoShare 等三家業者。如果遇上下雨，可以選擇搭 Uber 共享汽車</p>
-                </div>
+            <div class="about_top_R">
+                <h2>短程移動共享方案</h2>
+                <p>台灣機車不管是數量或是密集度，都在全球排行上數一數二，機車更是推動台灣經濟的重要推手。但想在都會區移動，嫌計程車太貴，搭公車太繞，騎Ubike
+                    太慢，或許共享機車是你的另一好選擇。目前台灣共享機車有 WEMO、iRent 和 GoShare 等三家業者。如果遇上下雨，可以選擇搭 Uber 共享汽車</p>
             </div>
-            <div class="about_bot">
-                <div class="about_bot_L">
-                    <h2>與共享自行車差異</h2>
-                    <p>共享機車的概念，其實跟 Ubike
-                        很像，民眾租用機車後，就可在指定的區域內移動。不同的是，Ubike有固定停放的停放點，但共享機車。採無站點式，只需停在都會區裡規定的機車停車格即可，而且除非是遇到颱風天，否則共享機車24小時全天營運，使用手機App就可租借車輛，不管你今天是要使用共享機車，去上班上學、去遊玩，共享機車都可以作為你在都會區走跳的另一代步工具
-                    </p>
-                </div>
-                <div class="about_bot_R">
-                    <img src="/img/about2.png" alt="">
-                </div>
+        </div>
+        <div class="about_bot">
+            <div class="about_bot_L">
+                <h2>與共享自行車差異</h2>
+                <p>共享機車的概念，其實跟 Ubike
+                    很像，民眾租用機車後，就可在指定的區域內移動。不同的是，Ubike有固定停放的停放點，但共享機車。採無站點式，只需停在都會區裡規定的機車停車格即可，而且除非是遇到颱風天，否則共享機車24小時全天營運，使用手機App就可租借車輛，不管你今天是要使用共享機車，去上班上學、去遊玩，共享機車都可以作為你在都會區走跳的另一代步工具
+                </p>
+            </div>
+            <div class="about_bot_R">
+                <img src="/img/about2.png" alt="">
             </div>
         </div>
     </div>
 
+    <!-- 優勢 -->
     <div class="merit container_pd" id="c-2">
         <div class="title_box">
             <h3 style="color: #EAF5FF;">優勢</h3>
@@ -161,6 +165,7 @@
         </div>
     </div>
 
+    <!-- 使用說明 -->
     <div class="instructions container_pd" id="c-3">
         <div class="title_box">
             <h3 style="color: #EAF5FF;">使用說明</h3>
@@ -168,12 +173,12 @@
         <!-- Swiper -->
         <div class="swiper-instructions">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/img/instructions1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/img/instructions2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/img/instructions3.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/img/instructions4.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/img/instructions5.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="/img/instructions6.jpg" alt=""></div>
+                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions1.jpg" alt=""></div>
+                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions2.jpg" alt=""></div>
+                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions3.jpg" alt=""></div>
+                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions4.jpg" alt=""></div>
+                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions5.jpg" alt=""></div>
+                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions6.jpg" alt=""></div>
 
             </div>
             <!-- Add Pagination -->
@@ -182,44 +187,43 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="singUp container_pd" id="c-4">
-            <div class="title_box">
-                <h3>註冊會員</h3>
+    <!-- 註冊會員 -->
+    <div class="singUp container container_pd" id="c-4">
+        <div class="title_box">
+            <h3>註冊會員</h3>
+        </div>
+        <div class="sinUp_group">
+            <div class="singUp_L">
+                <div class="singUp_img">
+                    <img src="/img/singUp-1.png" alt="">
+                </div>
+                <div class="singUp_p">
+                    <h4>下載APP</h4>
+                    <p>輸入手機、信箱 </p>
+                </div>
             </div>
-            <div class="sinUp_group">
-                <div class="singUp_L">
-                    <div class="singUp_img">
-                        <img src="/img/singUp-1.png" alt="">
-                    </div>
-                    <div class="singUp_p">
-                        <h4>下載APP</h4>
-                        <p>輸入手機、信箱 </p>
-                    </div>
+            <div class="singUp_M">
+                <div class="singUp_img">
+                    <img src="/img/singUp-2.png" alt="">
                 </div>
-                <div class="singUp_M">
-                    <div class="singUp_img">
-                        <img src="/img/singUp-2.png" alt="">
-                    </div>
-                    <div class="singUp_p">
-                        <h4>掃描證件</h4>
-                        <p>身分證、機車駕照 <br>(輕型/重型駕照可租車種不同) <br>拍攝本人面部驗證</p>
-                    </div>
+                <div class="singUp_p">
+                    <h4>掃描證件</h4>
+                    <p>身分證、機車駕照 <br>(輕型/重型駕照可租車種不同) <br>拍攝本人面部驗證</p>
                 </div>
-                <div class="singUp_R">
-                    <div class="singUp_img">
-                        <img src="/img/singUp-3.png" alt="">
-                    </div>
-                    <div class="singUp_p">
-                        <h4>付款設定</h4>
-                        <p>綁定信用卡/簽帳卡</p>
-                    </div>
+            </div>
+            <div class="singUp_R">
+                <div class="singUp_img">
+                    <img src="/img/singUp-3.png" alt="">
+                </div>
+                <div class="singUp_p">
+                    <h4>付款設定</h4>
+                    <p>綁定信用卡/簽帳卡</p>
                 </div>
             </div>
         </div>
-
     </div>
 
+    <!-- 品牌差異 -->
     <div class="brand container_pd" id="c-5">
         <div class="title_box">
             <h3>品牌差異</h3>
@@ -257,7 +261,7 @@
                         　
                     </tr>
                     　<tr>
-                        <th>營運 <br>
+                        <th style="height: 50px;">營運 <br>
                             單位</th>
                         <td>Gogoro</td>
                         <td>威摩科技</td>
@@ -268,35 +272,30 @@
                     <tr>
                         <th>車款</th>
                         <td>
-                            <!-- Swiper -->
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image:url(/img/goshare-Gogoro2.png)">
-                                    </div>
-                                    <div class="swiper-slide" style="background-image:url(/img/goshare-GogoroViva.png)">
-                                    </div>
-                                </div>
-
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination"></div>
-
-                                <!-- Add Arrows
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div> -->
-                            </div>
+                            <a href="/img/goshare-GogoroViva.png" data-lightbox="roadtrip" data-title="GoShare">
+                                <!-- <div class="goshare-img"></div> -->
+                                <img src="/img/goshare-GogoroViva.png" alt="" class="scooter-img">
+                            </a>
+                            <a href="/img/goshare-Gogoro2.png" data-lightbox="roadtrip" data-title="GoShare"></a>
                         </td>
                         <td>
-                            <div class="wemo-img"></div>
+                            <a href="/img/wemo-Candy3.png" data-lightbox="roadtrip" data-title="WeMo">
+                                <img src="/img/wemo-Candy3.png" alt="" class="scooter-img">
+                            </a>
                         </td>
                         <td>
-                            <div class="irent-img"></div>
+                            <a href="/img/irent-Many110.png" data-lightbox="roadtrip" data-title="iRent">
+                                <img src="/img/irent-Many110.png" alt="" class="scooter-img">
+                            </a>
                         </td>
-                        <td><a href="/img/irent-Many110.png" data-lightbox="image-1" data-title="Kymco Many 110"><img
-                                    class="ubike" src="/img/irent-Many110.png" alt=""></a></td>
-                        　
+                        <td>
+                            <a href="/img/ubike.png" data-lightbox="roadtrip" data-title="Ubike">
+                                <img src="/img/ubike.png" alt="" class="scooter-img">
+                            </a>
+                        </td>
                     </tr>
                     　<tr>
-                        <th>啟用 <br>
+                        <th style="height: 120px;">啟用 <br>
                             時間</th>
                         <td>2016/08-德國 <br>
                             2019/08-桃園 <br>
@@ -306,11 +305,13 @@
                             2019/04-新北
                         </td>
                         <td>2019/06-台北 <br>
-                            2019/10-台南/高雄 <br>
+                            2019/10-台南 <br>
+                            2019/10-高雄 <br>
                             2019/11-台中
                         </td>
                         <td>2012/08-台北 <br>
-                            至今有新北、桃園、新竹苗栗、臺中、彰化等據點
+                            至今有新北、桃竹苗 <br>
+                            臺中、彰化等據點
                         </td>
                         　
                     </tr>
@@ -331,7 +332,7 @@
                         　
                     </tr>
                     　<tr>
-                        <th>停車 <br>
+                        <th style="height: 120px;">停車 <br>
                             方式</th>
                         <td>公共停車格</td>
                         <td>公共停車格 <br>
@@ -345,89 +346,102 @@
                         　
                     </tr>
                 </table>
-                <div class="notice">
-                    <p>※以上數據僅供參考，實際數據依各廠最新公告為主</p>
+
+            </div>
+        </div>
+
+        <div class="notice">
+            <p>※以上數據僅供參考，實際數據依各廠最新公告為主</p>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 據點 -->
+    <div class="locations container container_pd" id="c-6">
+        <div class="title_box">
+            <h3>據點</h3>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(/img/location1.jpg)">
+                </div>
+                <div class="swiper-slide" style="background-image:url(/img/location2.jpg)">
                 </div>
             </div>
-
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 
     </div>
 
-    <div class="container">
-        <div class="locations container_pd" id="c-6">
-            <div class="title_box">
-                <h3>據點</h3>
-            </div>
-
-            <!-- Swiper -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(/img/location1.jpg)">
-                    </div>
-                    <div class="swiper-slide" style="background-image:url(/img/location2.jpg)">
-                    </div>
-                </div>
-
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-
-                <!-- Add Arrows -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+    <!-- 計費方式 -->
+    <div class="cost container container_pd" id="c-7">
+        <div class="title_box">
+            <h3>計費方式</h3>
         </div>
-
-        <div class="cost container_pd" id="c-7">
-            <div class="title_box">
-                <h3>計費方式</h3>
-            </div>
-            <img src="/img/cost.png" alt="">
-        </div>
+        <img src="/img/cost.png" alt="">
     </div>
 
+    <!-- 資料來源 -->
     <div class="source">
         <div class="title_box">
             <h3>資料來源</h3>
         </div>
-        <div class="source_list">
+        <div class="source_list container container_pd">
             <div class="source_list_1">
-                <img src="/img/goshare logo-2.png" alt="">
-                <h4>Goshare</h4>
+                <a href="https://www.ridegoshare.com/tw/" target="_blank"><img src="/img/goshare logo-2.png" alt="">
+                    <h4>Goshare</h4>
+                </a>
             </div>
             <div class="source_list_2">
-                <img src="/img/WeMo logo.png" alt="">
-                <h4>WeMo</h4>
+                <a href="https://www.wemoscooter.com/" target="_blank"><img src="/img/WeMo logo.png" alt="">
+                    <h4>WeMo</h4>
+                </a>
             </div>
             <div class="source_list_3">
-                <img src="/img/iRent logo.png" alt="">
-                <h4>iRent</h4>
+                <a href="https://www.easyrent.com.tw/UPLOAD/event/108event/1917/index.html" target="_blank"><img
+                        src="/img/iRent logo.png" alt="">
+                    <h4>iRent</h4>
+                </a>
             </div>
             <div class="source_list_4">
                 <p>
-                    Ubike官網 <br>
-                    money101 <br>
-                    yahoo汽車新聞 <br>
+                    <a href="https://i.youbike.com.tw/home/" target="_blank">Ubike官網</a> <br>
+                    <a href="https://www.money101.com.tw/blog/wemo-goshare-irent-%E5%85%B1%E4%BA%AB%E6%A9%9F%E8%BB%8A-%E7%AF%84%E5%9C%8D-%E5%84%AA%E6%83%A0"
+                        target="_blank">money101</a> <br>
+                    <a href="https://autos.yahoo.com.tw/news/goshare-app%E5%85%B1%E4%BA%AB%E9%9B%BB%E8%BB%8A%E6%9C%8D%E5%8B%99%E5%85%A8%E6%94%BB%E7%95%A5-030020650.html"
+                        target="_blank">yahoo汽車新聞</a> <br>
                 </p>
 
             </div>
         </div>
     </div>
 
+    <!-- footer -->
     <div class="footer">
         <p>Copyright © 2019 Goshare,Wemo,iRent All rights reserved | site project by Eileen</p>
+        <a href="#top">
+            <div class="back-top">▲</div>
+        </a>
     </div>
+
 
     <!-- JS -->
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
 
-    <!-- 表格輪播 -->
+    <!-- 據點輪播 -->
     <script>
         var swiper = new Swiper('.swiper-container', {
-            effect: 'flip',
-            grabCursor: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            //   loop: true,
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
             },
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -437,11 +451,11 @@
     </script>
 
     <!-- 使用說明輪播 -->
-    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper('.swiper-instructions', {
             slidesPerView: 3,
             spaceBetween: 30,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -449,6 +463,13 @@
         });
     </script>
 
+    <!-- 燈箱 -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+        })
+    </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js"></script>
