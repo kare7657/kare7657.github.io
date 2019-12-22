@@ -44,7 +44,8 @@
             }
 
             .navbar_L {
-                width: 100%;
+                width: 40%;
+                margin: auto;
             }
 
             .navbar_L h3 {
@@ -57,9 +58,10 @@
             }
 
             /* 漢堡條 */
-            .burger-bar{
+            .burger-bar {
                 position: relative;
             }
+
             .burger-bar:hover .menu {
                 display: inline-block;
                 padding: 20px 10px;
@@ -67,6 +69,7 @@
                 left: -10px;
                 top: 60px;
             }
+
             .burger-bar.fas {
                 display: inline-block;
                 position: absolute;
@@ -77,6 +80,7 @@
             .link-text:hover {
                 color: white;
             }
+
             .fas {
                 font-size: 20pt;
                 width: 40px;
@@ -86,6 +90,7 @@
                 padding: 0;
                 line-height: 40px;
             }
+
             .menu {
                 background-color: #2A2A68;
                 padding: 0;
@@ -105,7 +110,7 @@
                 text-decoration: none;
                 font-size: 14pt;
                 font-family: 微軟正黑體;
-                font-weight: 400;    
+                font-weight: 400;
             }
 
             /* banner */
@@ -173,7 +178,7 @@
 
             /* 優勢 */
             .merit {
-                height: 162vh;
+                height: 168vh;
                 background-position: 46% 120px;
                 background-size: 70%;
                 background-attachment: unset;
@@ -189,13 +194,10 @@
 
             .merit_L {
                 width: 100%;
-                /* left: 15%;
-                top: 400px; */
                 position: unset;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                margin: 0px 0px 0px 0px;
                 padding: 320px 0px 0px 0px;
 
             }
@@ -228,17 +230,23 @@
                 color: #fff;
                 text-align: center;
                 position: unset;
-                padding: 0px 30px;
-                margin: unset;
+                padding: 0px 30px 30px 30px;
+                margin: 0;
             }
 
             /* 使用說明 */
+
+            .swiper-instructions .swiper-wrapper {
+                margin: 40px 20px 20px 40px !important;
+            }
+
             .swiper-slide.scard {
                 width: 100% !important;
+                margin-right: 20px !important;
             }
 
             .swiper-slide.scard img {
-                width: 300px;
+                width: 250px !important;
             }
 
             .instructions .swiper-pagination {
@@ -823,7 +831,7 @@
         var swiper = new Swiper('.swiper-instructions', {
             slidesPerView: 3,
             spaceBetween: 30,
-            loop: true,
+            // loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

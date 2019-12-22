@@ -249,18 +249,19 @@ a{
     background-color: #2A2A68;
     padding: 80px 0px 120px 0px;
     position: relative;
-    
 }
 
-.swiper-instructions{ 
+.swiper-instructions{
     overflow: hidden !important;
-    width: calc(100% - 120px) !important;
-    padding: 80px 0px 40px 120px !important;
+}
+
+.swiper-instructions .swiper-wrapper{
+    margin: 80px 80px 40px 100px !important;
 }
 
 .swiper-slide.scard {
     width: 395px !important;
-    padding-right: 120px !important;    
+    margin-right: 100px !important;    
 }
 .instructions .swiper-pagination{
     justify-content: center;
@@ -358,7 +359,6 @@ th {
     height: 100px;
     background-color: #816FC2;
     padding: 10px;
-    /* border: 1px solid #000; */
     color: #fff;
     font-size: 16pt;
     font-weight: 400;    
