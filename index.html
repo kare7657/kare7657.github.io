@@ -9,13 +9,380 @@
     <link rel="stylesheet" href="/scooter.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css">
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
+    <style>
+        /* 手機 */
+        @media (max-width:360px) {
+
+            /* 通用文字 */
+            h2 {
+                font-size: 24pt;
+            }
+
+            h3 {
+                font-size: 20pt;
+            }
+
+            h4 {
+                font-size: 16pt;
+            }
+
+            /* container */
+            .container {
+                width: 100%;
+            }
+
+            .container_pd {
+                padding: 40px 0px 60px 0px;
+            }
+
+            /* navbar */
+            .navbar {
+                width: 100%;
+                height: 60px;
+            }
+
+            .navbar_L {
+                width: 100%;
+            }
+
+            .navbar_L h3 {
+                font-size: 16pt;
+                line-height: 46pt;
+            }
+
+            .navbar_R {
+                display: none;
+            }
+
+            /* 漢堡條 */
+            .burger-bar{
+                position: relative;
+            }
+            .burger-bar:hover .menu {
+                display: inline-block;
+                padding: 20px 10px;
+                position: absolute;
+                left: -10px;
+                top: 60px;
+            }
+            .burger-bar.fas {
+                display: inline-block;
+                position: absolute;
+                left: 10px;
+                line-height: 60px;
+            }
+
+            .link-text:hover {
+                color: white;
+            }
+            .fas {
+                font-size: 20pt;
+                width: 40px;
+                height: 40px;
+                color: #fff;
+                text-align: center;
+                padding: 0;
+                line-height: 40px;
+            }
+            .menu {
+                background-color: #2A2A68;
+                padding: 0;
+                margin: 0;
+                padding: 10px 0px 10px 0px;
+                line-height: 30px;
+            }
+
+            .link-list {
+                display: inline-block;
+                width: 150px;
+                margin-bottom: 20px;
+            }
+
+            .link-text {
+                color: #fff;
+                text-decoration: none;
+                font-size: 14pt;
+                font-family: 微軟正黑體;
+                font-weight: 400;    
+            }
+
+            /* banner */
+            .banner {
+                padding: 60px 0px 60px 0px;
+            }
+
+            .banner-web {
+                display: none;
+            }
+
+            .banner-phone {
+                display: block;
+                /* padding-top: 20px; */
+
+            }
+
+            /* 簡介 */
+            .about_top {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 40px 0px 60px 0px;
+
+            }
+
+            .about_top_L {
+                padding: 0px 60px;
+                width: calc(100% - 60px);
+                padding: 0px;
+            }
+
+            .about_top_L img {
+                width: 100%;
+            }
+
+            .about_top_R {
+                padding: 0px 60px;
+                width: calc(100% - 60px);
+                padding: 0px;
+            }
+
+            .about_bot {
+                display: flex;
+                flex-wrap: wrap-reverse;
+                justify-content: center;
+                padding: 0px 0px 0px 0px;
+            }
+
+            .about_bot_L {
+                padding: 0px 60px;
+                width: calc(100% - 60px);
+                padding: 0px;
+            }
+
+            .about_bot_R {
+                padding: 0px 60px;
+                width: calc(100% - 60px);
+                padding: 0px;
+            }
+
+            .about_bot_R img {
+                width: 100%;
+            }
+
+            /* 優勢 */
+            .merit {
+                height: 162vh;
+                background-position: 46% 120px;
+                background-size: 70%;
+                background-attachment: unset;
+            }
+
+            .merit_group {
+                width: 80%;
+                padding-bottom: 30px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .merit_L {
+                width: 100%;
+                /* left: 15%;
+                top: 400px; */
+                position: unset;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0px 0px 0px 0px;
+                padding: 320px 0px 0px 0px;
+
+            }
+
+            .mg_L h1 {
+                display: none;
+            }
+
+            .merit_L h2 {
+                text-align: center;
+            }
+
+            .merit_L p {
+                text-align: center;
+            }
+
+            .merit_R {
+                display: none;
+                position: unset;
+            }
+
+            .mg_R p {
+                color: #fff;
+                margin: 5px 0px;
+                line-height: 24pt;
+            }
+
+            .merit .notice p {
+                font-size: 11pt;
+                color: #fff;
+                text-align: center;
+                position: unset;
+                padding: 0px 30px;
+                margin: unset;
+            }
+
+            /* 使用說明 */
+            .swiper-slide.scard {
+                width: 100% !important;
+            }
+
+            .swiper-slide.scard img {
+                width: 300px;
+            }
+
+            .instructions .swiper-pagination {
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+
+            /* 註冊會員 */
+            .sinUp_group {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+
+            .sinUp_group img {
+                width: 100%;
+            }
+
+            .singUp_L {
+                width: 80%;
+            }
+
+            .singUp_M {
+                width: 80%;
+            }
+
+            .singUp_R {
+                width: 80%;
+            }
+
+            /* 品牌差異 */
+            .brand .notice {
+                width: 100%;
+            }
+
+            .table-head {
+                width: 200px;
+                margin: -50px 0px 0px -20px;
+            }
+
+            .brand .notice {
+                width: 100%;
+            }
+
+            .brand .notice p {
+                text-align: center;
+            }
+
+            /* 據點 */
+            .locations .swiper-container {
+                width: 100%;
+                height: 189px;
+            }
+
+            .locations .swiper-slide {
+                width: 100%;
+                height: 189px;
+            }
+
+            /* 計費方式 */
+            .cost img {
+                padding-top: 40px;
+            }
+
+            /* 資料來源 */
+            .source {
+                background-position: 45% 100%;
+
+            }
+
+            .source_list {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .source_list_1 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: unset;
+            }
+
+            .source_list_2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 40px 0px 0px 0px;
+
+            }
+
+            .source_list_3 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 0px 0px 0px 0px;
+            }
+
+            .source_list_4 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 20px 0px 0px 0px;
+            }
+
+            .source_list_4 p {
+                text-align: center;
+            }
+
+            /* footer */
+            .back-top {
+                width: 50px;
+                height: 50px;
+                right: 25px;
+                bottom: 25px;
+                line-height: 50px;
+            }
+
+            .footer p {
+                margin: 20px 20px 0px 20px;
+                font-size: 9pt;
+                line-height: 14pt;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="navbar">
+        <!-- 漢堡條 -->
+        <div class="burger-bar fas fa-bars">
+            <ul class="menu">
+                <li class="link-list"><a class="link-text" href="#c-1">簡介</a></li>
+                <li class="link-list"><a class="link-text" href="#c-2">優勢</a></li>
+                <li class="link-list"><a class="link-text" href="#c-3">使用說明</a></li>
+                <li class="link-list"><a class="link-text" href="#c-4">註冊會員</a></li>
+                <li class="link-list"><a class="link-text" href="#c-5">品牌差異</a></li>
+                <li class="link-list"><a class="link-text" href="#c-6">據點</a></li>
+                <li class="link-list"><a class="link-text" href="#c-7">計費方式</a></li>
+            </ul>
+        </div>
+
         <div class="navbar_L">
             <a href="#top">
                 <h3>共享機車</h3>
@@ -50,7 +417,8 @@
 
     <!-- banner -->
     <div class="banner container container_pd" id="top">
-        <img src="/img/banner.jpg" alt="">
+        <img src="/img/banner.jpg" alt="" class="banner-web">
+        <img src="/img/banner-phone.jpg" alt="" class="banner-phone">
     </div>
 
     <!-- 簡介 -->
@@ -173,12 +541,12 @@
         <!-- Swiper -->
         <div class="swiper-instructions">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions1.jpg" alt=""></div>
-                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions2.jpg" alt=""></div>
-                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions3.jpg" alt=""></div>
-                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions4.jpg" alt=""></div>
-                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions5.jpg" alt=""></div>
-                <div class="swiper-slide" style="width: 395px;"><img src="/img/instructions6.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions1.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions2.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions3.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions4.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions5.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions6.jpg" alt=""></div>
 
             </div>
             <!-- Add Pagination -->
@@ -241,7 +609,7 @@
                         <td>
                             <div class="table-head">短程最佳</div>
                             <img src="/img/goshare logo-2.png" alt="">
-                            <h4>Gogoro</h4>
+                            <h4>GoShare</h4>
                         </td>
                         <td>
                             <div class="table-head">日租最佳</div>
@@ -351,7 +719,7 @@
         </div>
 
         <div class="notice">
-            <p>※以上數據僅供參考，實際數據依各廠最新公告為主</p>
+            <p>※以上資料僅供參考，最新內容依各廠公告為主</p>
         </div>
     </div>
 
@@ -464,12 +832,12 @@
     </script>
 
     <!-- 燈箱 -->
-    <script>
+    <!-- <script>
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
         })
-    </script>
+    </script> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js"></script>

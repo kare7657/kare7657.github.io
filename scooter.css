@@ -7,9 +7,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.clearFix {
-    clear: both;
-}
 
 /* 色碼
 background-color: #EAF5FF ;
@@ -62,6 +59,16 @@ a{
     text-decoration: none;
 }
 
+/* 漢堡條 */
+.burger-bar{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.burger-bar.fas{
+    display: none;
+}
 
 /* navbar */
 .navbar {
@@ -107,6 +114,7 @@ a{
     margin: 0px 12px;
 }
 
+
 /* container */
 .container {
     width: 1140px;
@@ -122,6 +130,14 @@ a{
     /* height: 600px; */
     /* background-color: #B8DEFF; */
     padding-top: 160px;
+}
+.banner img{
+    width: 100%;
+}
+
+/* banner */
+.banner-phone{
+    display: none;
 }
 
 /* 簡介 */
@@ -233,16 +249,18 @@ a{
     background-color: #2A2A68;
     padding: 80px 0px 120px 0px;
     position: relative;
+    
 }
-.swiper-instructions{
-    overflow: hidden;
-    display: flex;    
+
+.swiper-instructions{ 
+    overflow: hidden !important;
+    width: calc(100% - 120px) !important;
+    padding: 80px 0px 40px 120px !important;
 }
-.swiper-instructions .swiper-wrapper{
-    padding: 80px 120px 0px 120px;
-}
-.swiper-instructions .swiper-wrapper .swiper-slide{
-    width: 395px;
+
+.swiper-slide.scard {
+    width: 395px !important;
+    padding-right: 120px !important;    
 }
 .instructions .swiper-pagination{
     justify-content: center;
@@ -320,7 +338,7 @@ a{
     text-align: center;
     line-height: 36pt;
     z-index: 999;
-    margin: -20px 0px 0px -20px ;
+    margin: -25px 0px 0px -20px ;
 } 
 
 table {
@@ -377,9 +395,7 @@ table h4{
     width: 1140px; 
     font-size: 9pt;
     color: #727171;
-    text-align: right;
     margin: auto;
-    justify-content: center;
 }
 
 .brand .notice p {    
@@ -411,7 +427,6 @@ table h4{
 /* 據點 */
 .locations img {
     width: 100%;
-    height: 100%;
     padding-top: 80px;
 }
 .locations .swiper-container {
