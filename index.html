@@ -27,7 +27,7 @@
             h4 {
                 font-size: 16pt;
             }
-
+            
             /* container */
             .container {
                 width: 100%;
@@ -235,23 +235,30 @@
             }
 
             /* 使用說明 */
-
-            .swiper-instructions .swiper-wrapper {
-                margin: 40px 20px 20px 40px !important;
+            .swiper-instructions{
+                display: none;
+            }            
+            .swiper-instructions-mb{
+                display: block;
+                /* width: 100%; */
+                overflow: hidden !important;
+                position: relative;
             }
-
-            .swiper-slide.scard {
-                width: 100% !important;
-                margin-right: 20px !important;
+            .swiper-instructions-mb .swiper-wrapper {
+                margin: 60px !important;
+                
             }
-
+            .swiper-instructions-mb  .swiper-slide.scard {
+                width: 250px !important;
+                margin-right: 40px !important;
+            }
+            
             .swiper-slide.scard img {
                 width: 250px !important;
             }
-
-            .instructions .swiper-pagination {
-                justify-content: center;
-                margin-bottom: 50px;
+            .instructions-mb .swiper-pagination {
+                position: absolute;
+                margin: unset;
             }
 
             /* 註冊會員 */
@@ -294,6 +301,7 @@
 
             .brand .notice p {
                 text-align: center;
+                margin: 20px 10px 0px 10px; 
             }
 
             /* 據點 */
@@ -441,14 +449,14 @@
             <div class="about_top_R">
                 <h2>短程移動共享方案</h2>
                 <p>台灣機車不管是數量或是密集度，都在全球排行上數一數二，機車更是推動台灣經濟的重要推手。但想在都會區移動，嫌計程車太貴，搭公車太繞，騎Ubike
-                    太慢，或許共享機車是你的另一好選擇。目前台灣共享機車有 WEMO、iRent 和 GoShare 等三家業者。如果遇上下雨，可以選擇搭 Uber 共享汽車</p>
+                    太慢，或許共享機車是你的另一好選擇。目前<span>台灣共享機車有 GoShare、WEMO 和 iRent 等三家業者</span>。如果遇上下雨，可以選擇搭 Uber 共享汽車</p>
             </div>
         </div>
         <div class="about_bot">
             <div class="about_bot_L">
                 <h2>與共享自行車差異</h2>
                 <p>共享機車的概念，其實跟 Ubike
-                    很像，民眾租用機車後，就可在指定的區域內移動。不同的是，Ubike有固定停放的停放點，但共享機車。採無站點式，只需停在都會區裡規定的機車停車格即可，而且除非是遇到颱風天，否則共享機車24小時全天營運，使用手機App就可租借車輛，不管你今天是要使用共享機車，去上班上學、去遊玩，共享機車都可以作為你在都會區走跳的另一代步工具
+                    很像，民眾租用機車後，就可在指定的區域內移動。不同的是，Ubike有固定停放的停放點，但共享機車採<span>無站點式</span>，只需停在都會區裡規定的機車停車格即可，且24小時全天營運(颱風天除外)，使用手機App就可租借車輛，不管你今天是要使用共享機車，去上班上學、去遊玩，共享機車都可以作為你在都會區走跳的另一代步工具
                 </p>
             </div>
             <div class="about_bot_R">
@@ -547,7 +555,21 @@
             <h3 style="color: #EAF5FF;">使用說明</h3>
         </div>
         <!-- Swiper -->
-        <div class="swiper-instructions">
+        <div class="swiper-container swiper-instructions">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide scard"><img src="/img/instructions1.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions2.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions3.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions4.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions5.jpg" alt=""></div>
+                <div class="swiper-slide scard"><img src="/img/instructions6.jpg" alt=""></div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <div class="swiper-instructions-mb">
             <div class="swiper-wrapper">
                 <div class="swiper-slide scard"><img src="/img/instructions1.jpg" alt=""></div>
                 <div class="swiper-slide scard"><img src="/img/instructions2.jpg" alt=""></div>
@@ -584,7 +606,7 @@
                 </div>
                 <div class="singUp_p">
                     <h4>掃描證件</h4>
-                    <p>身分證、機車駕照 <br>(輕型/重型駕照可租車種不同) <br>拍攝本人面部驗證</p>
+                    <p>身分證、機車駕照 <br><span>(輕型/重型駕照可租車種不同)</span> <br>拍攝本人面部驗證</p>
                 </div>
             </div>
             <div class="singUp_R">
@@ -727,7 +749,7 @@
         </div>
 
         <div class="notice">
-            <p>※以上資料僅供參考，最新內容依各廠公告為主</p>
+            <p>※以上資料僅供參考，詳情依各廠公告為主</p>
         </div>
     </div>
 
@@ -740,7 +762,7 @@
         </div>
 
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container slocation">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(/img/location1.jpg)">
                 </div>
@@ -811,7 +833,7 @@
 
     <!-- 據點輪播 -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.slocation', {
             slidesPerView: 1,
             spaceBetween: 30,
             //   loop: true,
@@ -835,17 +857,20 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },
+            },            
+        });
+    </script>
+    <!-- 使用說明輪播-手機板 -->
+    <script>
+        var swiper = new Swiper('.swiper-instructions-mb', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },            
         });
     </script>
 
-    <!-- 燈箱 -->
-    <!-- <script>
-        lightbox.option({
-            'resizeDuration': 200,
-            'wrapAround': true,
-        })
-    </script> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js"></script>
