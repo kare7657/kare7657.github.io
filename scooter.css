@@ -318,8 +318,7 @@ a{
 }
 
 .brand_wrap {
-    padding-top: 80px;
-    overflow: auto;  
+    padding-top: 80px;    
     display: flex;   
     justify-content: center;      
 }
@@ -327,6 +326,7 @@ a{
 .brand_table {
     width: 100%;
     margin: 0;
+    overflow: auto;  
 }
 
 .table-head{
