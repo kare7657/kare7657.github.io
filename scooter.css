@@ -343,7 +343,7 @@ a{
 } 
 
 table {
-    width: 100%;
+    width: 1140px; /* 固定寬度 */
     border: none;
     text-align: center;
     border-collapse: collapse;
@@ -366,8 +366,7 @@ th {
 
 th:first-child{
     position: sticky;
-    left: 0;
-    /* 首行永遠固定於左 */
+    left: 0;    /* 首行永遠固定於左 */
     z-index: 1;
 }
 
