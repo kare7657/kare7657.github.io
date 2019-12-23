@@ -366,7 +366,6 @@ th {
 }
 
 th:first-child{
-    position: -webkit-sticky; /* Safari */
     position: sticky;
     left: 0;    /* 首行永遠固定於左 */
     z-index: 1;
