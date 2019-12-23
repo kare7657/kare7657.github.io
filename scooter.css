@@ -365,8 +365,7 @@ th {
     text-align: center;
 }
 
-th:first-child{
-    position: sticky;
+th:first-child{    
     left: 0;    /* 首行永遠固定於左 */
     z-index: 1;
 }
