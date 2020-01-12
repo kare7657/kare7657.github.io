@@ -292,7 +292,7 @@ a{
 .singUp_R {
     width: 30%;
 }
-.singUp_img {
+.singUp_img img {
     width: 100%;
     /* background-color: #B8DEFF; */
     object-fit: cover;

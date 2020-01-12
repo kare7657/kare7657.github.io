@@ -12,6 +12,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
     <style>
+        /* 平板 */
+        @media (max-width:1024px) {
+            .container {
+                width: 100%;
+            }
+
+            .swiper-instructions .swiper-wrapper {
+                margin: 80px 0px 80px 150px !important;
+            }
+
+            .swiper-instructions .scard {
+                width: 150px !important;
+                height: 100% !important;
+                margin-right: 300px !important;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            .brand .notice {
+                width: 1024px;
+            }
+
+        }
+
         /* 手機 */
         @media (max-width:360px) {
 
@@ -27,7 +53,7 @@
             h4 {
                 font-size: 16pt;
             }
-            
+
             /* container */
             .container {
                 width: 100%;
@@ -234,25 +260,30 @@
             }
 
             /* 使用說明 */
-            .swiper-instructions{
+            .swiper-instructions {
                 display: none;
-            }            
-            .swiper-instructions-mb{
+            }
+
+            .swiper-instructions-mb {
                 display: block;
                 overflow: hidden !important;
                 position: relative;
             }
+
             .swiper-instructions-mb .swiper-wrapper {
                 margin: 40px 0px 40px 0px !important;
-                
+
             }
-            .swiper-instructions-mb  .swiper-slide.scard {
+
+            .swiper-instructions-mb .swiper-slide.scard {
                 width: 280px !important;
                 margin: 0px 20px !important;
-            }            
+            }
+
             .swiper-slide.scard img {
                 width: 280px !important;
             }
+
             .instructions-mb .swiper-pagination {
                 position: absolute;
                 margin: unset;
@@ -298,7 +329,7 @@
 
             .brand .notice p {
                 text-align: center;
-                margin: 20px 10px 0px 10px; 
+                margin: 20px 10px 0px 10px;
             }
 
             /* 據點 */
@@ -854,7 +885,7 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },            
+            },
         });
     </script>
     <!-- 使用說明輪播-手機板 -->
@@ -864,7 +895,7 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
-            },            
+            },
         });
     </script>
 
