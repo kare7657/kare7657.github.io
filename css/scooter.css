@@ -66,6 +66,9 @@ a{
 }
 .menu{
     display: none;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
 }
 .burger-bar.fas{
     display: none;
@@ -148,11 +151,19 @@ a{
     display: flex;
 }
 
+
 .about_top_L {
     width: 50%;
     /* background-color: #B8DEFF; */
     padding: 0px 40px;
+    display: flex;
+    align-items: center;
 }
+
+.about_top_L img{
+    width: 100%;
+}
+
 
 .about_top_R {
     width: 50%;
@@ -174,7 +185,14 @@ a{
     width: 50%;
     /* background-color: #B8DEFF; */
     padding: 0px 20px;
+    display: flex;
+    align-items: center;
 }
+
+.about_bot_R img{
+    width: 100%;
+}
+
 .about span{
     font-weight: 600;
     color: #816FC2;
