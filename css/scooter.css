@@ -1,5 +1,6 @@
 body,
 html {
+    width: 100%;
     margin: 0;
     /* background-color: #eee; */
     font-family: 微軟正黑體;
@@ -200,7 +201,7 @@ a{
 }
 
 .merit_L {
-    width: 40%;    
+    width: 40%;
     position: absolute;
     left: 20%;
     top: 20%;
@@ -252,7 +253,9 @@ a{
 .swiper-container{
     width: 100% !important;
     height: 100% !important;
-    
+    overflow: hidden !important;
+    position: relative;
+
 }
 .instructions {
     background-color: #2A2A68;
@@ -265,7 +268,7 @@ a{
 .swiper-instructions .scard {
     width: 395px !important;
     height: 100% !important;
-    margin-right: 100px !important;    
+    margin-right: 100px !important;
 }
 .swiper-instructions-mb{
     display: none;
@@ -306,7 +309,7 @@ a{
     padding: 0;
 }
 .singUp span{
-    font-size: 12pt;    
+    font-size: 12pt;
 }
 
 /* 品牌差異 */
@@ -314,14 +317,14 @@ a{
     background-image: url("/img/brand.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;  
+    position: relative;
 }
 
 .brand_wrap {
     padding-top: 80px;
-    overflow: auto;  
-    display: flex;   
-    justify-content: center;      
+    overflow: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .brand_table {
@@ -340,7 +343,7 @@ a{
     line-height: 36pt;
     z-index: 999;
     margin: -25px 0px 0px -20px ;
-} 
+}
 
 table {
     width: 1140px; /* 固定寬度 */
@@ -361,12 +364,12 @@ th {
     padding: 10px;
     color: #fff;
     font-size: 16pt;
-    font-weight: 400; 
+    font-weight: 400;
     text-align: center;
 }
 
 th:first-child{
-    position: sticky;    
+    position: sticky;
     position: -webkit-sticky;
     left: 0;    /* 首行永遠固定於左 */
     z-index: 1;
@@ -384,7 +387,7 @@ td {
 table img{
     width: 140px;
     object-position: center;
-    padding-top: 20px;    
+    padding-top: 20px;
 }
 table h4{
     padding: 0px 0px 30px 0px;
@@ -393,19 +396,19 @@ table h4{
 }
 
 .brand .notice{
-    width: 1140px; 
+    width: 1140px;
     font-size: 9pt;
     color: #727171;
     margin: auto;
 }
 
-.brand .notice p {    
+.brand .notice p {
     font-size: 11pt;
     color: #727171;
-    text-align: right;    
-    margin: 20px 0px 0px 0px; 
+    text-align: right;
+    margin: 20px 0px 0px 0px;
     padding: 0px;
-    
+
 }
 
 .swiper-container {
