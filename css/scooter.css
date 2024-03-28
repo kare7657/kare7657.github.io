@@ -2,12 +2,10 @@ body,
 html {
     width: 100%;
     margin: 0;
-    /* background-color: #eee; */
     font-family: 微軟正黑體;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 
 /* 色碼
 background-color: #EAF5FF ;
@@ -26,7 +24,7 @@ background-color: #2A2A68 ; */
 
 h2 {
     font-size: 26pt;
-    color: #816FC2;
+    color: #816fc2;
     text-align: center;
     margin: 20px 0px;
 }
@@ -35,16 +33,14 @@ h3 {
     font-size: 22pt;
     color: #727171;
     text-align: center;
-    border-bottom: #B8DEFF 2pt solid;
+    border-bottom: #b8deff 2pt solid;
     margin: 0;
     padding-bottom: 5px;
 }
 
 h4 {
     font-size: 18pt;
-    /* font-weight: 600; */
     color: #727171;
-    /* text-align: center; */
     margin: 20px 0px;
     padding-bottom: 10px;
 }
@@ -56,29 +52,15 @@ p {
     text-align: justify;
 }
 
-a{
+a {
     text-decoration: none;
-}
-
-/* 漢堡條 */
-.burger-bar{
-    display: none;
-}
-.menu{
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    transition: 0.5s;
-}
-.burger-bar.fas{
-    display: none;
 }
 
 /* navbar */
 .navbar {
     width: 100%;
     height: 80px;
-    background-color: #816FC2;
+    background-color: #816fc2;
     position: fixed;
     display: flex;
     z-index: 999;
@@ -86,14 +68,13 @@ a{
 
 .navbar_L {
     width: 30%;
-    /* padding-left: 40px;*/
 }
 
 .navbar_L h3 {
     font-size: 18pt;
     line-height: 60pt;
     font-weight: 600;
-    color: #FFF;
+    color: #fff;
     border: none;
     text-decoration: none;
 }
@@ -112,12 +93,11 @@ a{
     font-size: 16pt;
     line-height: 54pt;
     font-weight: 600;
-    color: #FFF;
+    color: #fff;
     border: none;
     display: inline-block;
     margin: 0px 12px;
 }
-
 
 /* container */
 .container {
@@ -135,12 +115,12 @@ a{
     /* background-color: #B8DEFF; */
     padding-top: 160px;
 }
-.banner img{
+.banner img {
     width: 100%;
 }
 
 /* banner */
-.banner-phone{
+.banner-phone {
     display: none;
 }
 
@@ -151,7 +131,6 @@ a{
     display: flex;
 }
 
-
 .about_top_L {
     width: 50%;
     /* background-color: #B8DEFF; */
@@ -160,10 +139,9 @@ a{
     align-items: center;
 }
 
-.about_top_L img{
+.about_top_L img {
     width: 100%;
 }
-
 
 .about_top_R {
     width: 50%;
@@ -189,18 +167,18 @@ a{
     align-items: center;
 }
 
-.about_bot_R img{
+.about_bot_R img {
     width: 100%;
 }
 
-.about span{
+.about span {
     font-weight: 600;
-    color: #816FC2;
+    color: #816fc2;
 }
 
 /* 優勢 */
 .merit {
-    background-color: #816FC2;
+    background-color: #816fc2;
     height: 75vh;
     padding: 80px 0px 120px 0px;
     background-image: url("/img/model-gogoro.png");
@@ -229,7 +207,7 @@ a{
     font-size: 70pt;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #FFF;
+    color: #fff;
     text-shadow: rgba(42, 42, 104, 0.7) 2px 2px 10px;
     margin: -40px 20px 0px 0px;
 }
@@ -243,7 +221,7 @@ a{
 
 .mg_R h2 {
     text-align: left;
-    color: #B8DEFF;
+    color: #b8deff;
     margin: 0px 0px 10px 0px;
 }
 
@@ -268,19 +246,18 @@ a{
 }
 
 /* 使用說明 */
-.swiper-container{
+.swiper-container {
     width: 100% !important;
     height: 100% !important;
     overflow: hidden !important;
     position: relative;
-
 }
 .instructions {
-    background-color: #2A2A68;
+    background-color: #2a2a68;
     padding: 80px 0px 120px 0px;
 }
 
-.swiper-instructions .swiper-wrapper{
+.swiper-instructions .swiper-wrapper {
     margin: 80px 80px 80px 150px !important;
 }
 .swiper-instructions .scard {
@@ -288,12 +265,12 @@ a{
     height: 100% !important;
     margin-right: 100px !important;
 }
-.swiper-instructions-mb{
+.swiper-instructions-mb {
     display: none;
 }
 
 /* 註冊會員 */
-.sinUp{
+.sinUp {
     position: relative;
 }
 
@@ -326,7 +303,7 @@ a{
     margin: 40px 0px 0px 0px;
     padding: 0;
 }
-.singUp span{
+.singUp span {
     font-size: 12pt;
 }
 
@@ -350,17 +327,17 @@ a{
     margin: 0;
 }
 
-.table-head{
+.table-head {
     width: 150px;
     height: 50px;
-    background-color: #2A2A68;
+    background-color: #2a2a68;
     color: #fff;
     font-size: 16pt;
     font-weight: 600;
     text-align: center;
     line-height: 36pt;
     z-index: 999;
-    margin: -25px 0px 0px -20px ;
+    margin: -25px 0px 0px -20px;
 }
 
 table {
@@ -372,13 +349,13 @@ table {
 }
 
 tr {
-    border-bottom: 1px solid #B8DEFF;
+    border-bottom: 1px solid #b8deff;
 }
 
 th {
     width: 60px;
     height: 100px;
-    background-color: #816FC2;
+    background-color: #816fc2;
     padding: 10px;
     color: #fff;
     font-size: 16pt;
@@ -386,10 +363,10 @@ th {
     text-align: center;
 }
 
-th:first-child{
+th:first-child {
     position: sticky;
     position: -webkit-sticky;
-    left: 0;    /* 首行永遠固定於左 */
+    left: 0; /* 首行永遠固定於左 */
     z-index: 1;
 }
 
@@ -402,18 +379,18 @@ td {
     color: #727171;
     padding: 0px 20px;
 }
-table img{
+table img {
     width: 140px;
     object-position: center;
     padding-top: 20px;
 }
-table h4{
+table h4 {
     padding: 0px 0px 30px 0px;
     margin: 0;
     font-size: 16pt;
 }
 
-.brand .notice{
+.brand .notice {
     width: 1140px;
     font-size: 9pt;
     color: #727171;
@@ -426,7 +403,6 @@ table h4{
     text-align: right;
     margin: 20px 0px 0px 0px;
     padding: 0px;
-
 }
 
 .swiper-container {
@@ -434,14 +410,14 @@ table h4{
     height: 200px;
     margin: 20px 0px;
 }
-  .swiper-slide {
+.swiper-slide {
     background-position: center;
     background-size: cover;
     width: 200px;
     height: 200px;
 }
 
-.brand .scooter-img{
+.brand .scooter-img {
     width: 200px;
     margin-bottom: 20px;
 }
@@ -460,11 +436,11 @@ table h4{
     background-position: center;
     background-size: cover;
     width: 1140px;
-    height:  600px;
+    height: 600px;
 }
 
 /* 計費方式 */
-.cost img{
+.cost img {
     width: 100%;
     padding-top: 80px;
 }
@@ -498,19 +474,19 @@ table h4{
     width: 150px;
     margin-top: 40px;
 }
-.source_list img{
+.source_list img {
     object-position: center;
 }
-.source h4{
+.source h4 {
     text-align: center;
     margin: 0px;
     padding-bottom: 0px;
     font-weight: 600;
     font-size: 16pt;
-    color: #816FC2;
+    color: #816fc2;
 }
-.source a{
-    color: #816FC2;
+.source a {
+    color: #816fc2;
     text-decoration: none;
 }
 
@@ -518,7 +494,7 @@ table h4{
 .footer {
     width: 100%;
     height: 80px;
-    background-color: #816FC2;
+    background-color: #816fc2;
     display: flex;
     justify-content: center;
 }
@@ -528,25 +504,24 @@ table h4{
     line-height: 36pt;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #FFF;
+    color: #fff;
 }
 .back-top {
     width: 60px;
     height: 60px;
-    border: solid 1pt #604F9F;
+    border: solid 1pt #604f9f;
     position: fixed;
     right: 50px;
     bottom: 50px;
     border-radius: 50%;
-    color: #604F9F;
+    color: #604f9f;
     text-align: center;
     font-size: 14pt;
     line-height: 60px;
     z-index: 999;
-
 }
 
-.back-top:hover{
+.back-top:hover {
     border: solid 1pt rgba(96, 79, 159, 0.6);
     background-color: rgba(96, 79, 159, 0.6);
     color: #fff;
